@@ -4,8 +4,7 @@ require 'stemmer/porter'
 
 # adapted from https://github.com/sausheong/naive-bayes
 class Bayes  
-  attr_reader :categories
-  attr_accessor :doc_count
+  attr_reader :categories, :doc_count
   
   def initialize
     @categories = Hash.new {|hsh, key| hsh[key] = Category.new(key, self) }
