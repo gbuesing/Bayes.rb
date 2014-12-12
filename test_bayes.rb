@@ -1,7 +1,7 @@
-require 'test/unit'
-require 'bayes'
+require 'minitest/autorun'
+require './bayes'
 
-class TestBayes < Test::Unit::TestCase
+class TestBayes < Minitest::Test
 
   # stolen from Classifier gem test suite:
   # https://github.com/cardmagic/classifier/blob/master/test/bayes/bayesian_test.rb
